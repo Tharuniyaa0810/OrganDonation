@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .my-organ-donation-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .my-organ-donation-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .my-organ-donation-slideshow-container {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .my-organ-donation-slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+  }
+  
+  .my-organ-donation-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .my-organ-donation-navigation {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .my-organ-donation-navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .my-organ-donation-navigation li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .my-organ-donation-navigation li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .my-organ-donation-login {
+    float: right;
+  }
+  
+  .my-organ-donation-contact-us {
+    text-align: center;
+  }
+  
+  .my-organ-donation-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  

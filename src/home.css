@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: #333;
+    padding: 50px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    color: #831a1a;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  .hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    max-height: 100%;
+  }
+  
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  
+  
+    .center-content {
+      position: absolute;
+      top: 67%;
+      left: 41%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      max-width: 550px;
+      background-color: #1d1d1d77;
+      max-height: max-content;
+      border-radius: 5%;
+      padding: 30px;
+    }
+    
+  
+  
+  .center-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .center-content p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+  
+  
+  
+  h1 {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .donate-button {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .donate-button:hover {
+    background-color: #0056b3;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  .logo {
+    font-size: 34px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .nav-links li {
+    margin-right: 100px;
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+ 
+.nav-links li a.home:hover {
+  color: #ff9900; /* Change to your desired hover color */
+}
+.nav-links li a.active {
+  color: #ff9900; /* Change to your desired active link color */
+}
+.donate-button {
+  background-color: #8e1010c6;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.donate-button1 {
+  background-color: #8e1010c6;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.donate-button:hover {
+  background-color: #0056b3;
+}
+.organ-connect-text{
+  margin-left: 20px;
+  margin-top: -70px;
+}
+.organlogonear{
+  font-family: 'papyrus';
+  font-size: 40px;
+  color: #ee6f08;
+}

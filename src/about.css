@@ -1,0 +1,281 @@
+.details
+{
+   position: absolute;
+   top: 200px;
+   left:700px;
+}
+.log{
+    position:absolute;
+    top: 5px;
+    height: 75px;
+    width: 75px;
+  }
+  .log:hover {
+    height: 80px;
+    width: 80px;}
+  
+  .mediGo
+  { 
+    position: absolute;
+    color:#155f4e ;
+    font-size: 45px;
+    font-family:'papyrus';
+    position: absolute;
+    margin-top: 10px;
+    left: 83px;
+  }
+  .linehr
+{
+  border-bottom: 2px solid rgb(6, 32, 25);
+  position: absolute;
+ top: 75px;
+  width: 100%;
+}
+.doctor1{
+    height:25px;
+    width:40px;
+    position: absolute;
+    top:38px;
+    right:127px
+}
+.doctorpic
+{
+    position: absolute;
+    height:200px;
+    width:200px;
+    top:7%;
+    left:25%;
+}
+.quote
+{
+    position: absolute;
+    top:73%;
+    font-size: 27px;
+    width:500px;
+    left:-30px;
+    font-family: 'Allerta Stencil';
+    color:#155f4e
+}
+.arrow
+{
+    position: absolute;
+    top:600px;
+    left:200px;
+    height:100px;
+    width:100px;
+}
+.listt
+{
+    position: absolute;
+    font-size: 30px;
+    left:-50px;
+}
+.appdet
+{
+    pointer-events: fill;
+    display: inline-block;
+    position: relative;
+    color: #1c6453;
+    font-family: papyrus;
+    position: relative;
+    left:-70px;
+    top: -20px;
+}
+.appdet::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #2f826f;
+    transform-origin: bottom left;
+    transition: transform 0.50s ease-out;
+}
+
+  
+.appdet:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.wel {
+    animation: color-change 1.7s infinite;
+    position: absolute;
+    top:-13px;
+    left:600px;
+    font-size: 40px;
+    font-family:papyrus;
+  }
+  
+  @keyframes color-change {
+    0% { color: #ff2727; }
+    50% { color: rgb(46, 81, 255); }
+    100% { color: rgb(255, 49, 49); }
+  }
+  .divwel
+  {
+    height:100px;
+    width:100%;
+    position: absolute;
+    top:90px;
+    
+  }
+.quoteimg
+{
+  height:30px;
+  width:30px;
+  position: absolute;
+  top:220px;
+  left:380px;
+  
+}
+.quoteimg1
+{
+  height:30px;
+  width:30px;
+  position: absolute;
+  top:220px;
+  left:10px;
+}
+.mentee
+{
+  position: absolute;
+  top:500px;
+  left:-30px;
+  font-size: 40px;
+  font-family: papyrus;
+  color:rgb(7, 63, 46);
+}
+.formback
+{
+height: 300px;
+width: 420px;
+position:relative;
+left: 50px;
+top:120px;
+  background: #c2e3df;
+  border-radius: 55px;;
+}
+.listfont{
+  font-family: cursive;
+  color:#4a9ddc
+}
+.vision{
+  height:150px;
+  width:150px;
+  position: absolute;
+  top:7%;
+  left:75%;
+}
+.trust{
+  height:150px;
+  width:150px;
+  position: absolute;
+  top:7%;
+  left:9%;
+}
+.connect{
+  height:150px;
+  width:150px;
+  position: absolute;
+  top:7%;
+  left:42%;
+}
+.visdiv{
+  width: 70%;
+  height:430px;
+  background: #11ada880;
+  position: absolute;
+  left:12%;
+  top:38.5%;
+  border: 10px solid rgba(11, 59, 59, 0.801);
+  border-radius: 70px;
+}
+.para{
+  font-size: 37px;
+  position: absolute;
+  top:20%;
+  left:3%;
+  width: 90%;
+  text-align: center;
+  font-family: 'East Sea Dokdo', cursive;
+}
+.para1{
+  width:270px;
+  position: absolute;
+  top:57%;
+  left: 30px;
+  font-size: 25px;
+  text-align: center;
+  font-family: 'East Sea Dokdo', cursive;
+}
+.para2{
+  width:350px;
+  position: absolute;
+  top:57%;
+  left: 33%;
+  font-size: 25px;
+  text-align: center;
+  font-family: 'East Sea Dokdo', cursive;
+}
+.para3{
+  width:280px;
+  position: absolute;
+  top:57%;
+  left: 70%;
+  font-size: 25px;
+  text-align: center;
+  font-family: 'East Sea Dokdo', cursive;
+}
+.headtru{
+  position:absolute;
+  top:45%;
+  left:10%;
+  color: rgb(12, 17, 118);
+  font-family: 'Righteous', cursive;
+}
+.headcon{
+  position:absolute;
+  top:45%;
+  left:41%;
+  color: rgb(12, 17, 118);
+  font-family: 'Righteous', cursive;
+}
+.headtran{
+  position:absolute;
+  top:45%;
+  left:70%;
+  color: rgb(12, 17, 118);
+  font-family: 'Righteous', cursive;
+  transition: all 500ms ease;
+}
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+.headcon:hover,.headtran:hover,.headtru:hover {
+	animation: bounce 1s;
+}
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+table,th,td{
+  border: 2px solid black ;
+  border-style:groove;
+  padding: 5px;
+  border-collapse: collapse;
+}
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Seymour+One&display=swap');
+
+
