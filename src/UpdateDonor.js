@@ -19,6 +19,8 @@ import { DonorContext } from "./DonorContext";
 const UpdateDonor = () => {
   const { id } = useParams();
   const { setDonorDetails } = useContext(DonorContext);
+  const [successMessage, setSuccessMessage] = useState("");
+  const [donor, setDonor] = useState({});
   const [formData, setFormData] = useState({
     DonorName: "",
     PhoneNumber: "",
@@ -48,32 +50,29 @@ const UpdateDonor = () => {
       const response = await axios.get(
         `http://localhost:8080/OrganDonation/getdonor/${id}`
       );
-      const donorData = response.data;
-      setFormData(donorData);
+      setDonor(response.data);
+      setFormData(response.data);
     } catch (error) {
       console.error(error);
       // Handle error scenarios
     }
   };
-
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevent default form submission behavior
+    e.preventDefault();
     try {
-      if (id) {
-        await axios.put(
-          `http://localhost:8080/OrganDonation/updatedonor/${id}`,
-          formData
-        );
-      } 
-      
-      
-      // Redirect to the donor list page
+      await axios.put(
+        `http://localhost:8080/OrganDonation/updatedonor/${id}`,
+        formData
+      );
+      setSuccessMessage("Donor details updated successfully!");
       navigate("/list");
+      // Handle successful update, e.g., show a success message
     } catch (error) {
       console.error(error);
       // Handle error scenarios
     }
   };
+  
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -88,8 +87,10 @@ backgroundRepeat: "no-repeat",
 
 return (
 <div className="body" style={ystyle}>
+<h1>Edit Donor</h1>
+      {successMessage && <p>{successMessage}</p>}
 <div class="container">
-<div class="title">Registration</div>
+
 <div class="content">
 <form action="#" onSubmit={handleSubmit}>
 <div class="user-details">
@@ -214,6 +215,22 @@ return (
                   onChange={handleChange}
                   required
                 />
+              </div>
+              <div class="input-box">
+                <span class="details">Donating Organ</span>
+                <select value={formData.DonatingOrgan}
+    onChange={handleChange}
+    name="DonatingOrgan">
+            <option value="">-- Select Organ --</option>
+            <option value="Heart">Heart</option>
+            <option value="Kidney">Kidney</option>
+            <option value="Liver">Liver</option>
+            <option value="Lung">Lung</option>
+            <option value="Tissues">Tissues</option>
+            <option value="Cornea(eye)">Cornea(eye)</option>
+            <option value="Pancreas">Pancreas</option>
+            <option value="Small Bowel">Small Bowel</option>
+          </select>
               </div>
             </div>
 

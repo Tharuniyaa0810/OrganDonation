@@ -22,7 +22,7 @@ function App()
                 <Route path="/homeuser" element={<Homepage/>}></Route>
                 <Route path="/sign" element={<SignUp/>}></Route>
                 <Route path="/donor" element={<Donor/>}></Route>
-                <Route path="/updatedonor" element={<UpdateDonor/>}></Route>
+                <Route path="/edit/:id" element={<UpdateDonor/>}></Route>
                 <Route path="/list" element={<ListDonor/>}></Route>
             </Routes>
         </BrowserRouter>

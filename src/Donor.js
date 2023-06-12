@@ -239,13 +239,18 @@ return (
               </div>
               <div class="input-box">
                 <span class="details">Donating Organ</span>
-                <select>
+                <select value={formData.DonatingOrgan}
+    onChange={handleChange}
+    name="DonatingOrgan">
             <option value="">-- Select Organ --</option>
             <option value="Heart">Heart</option>
             <option value="Kidney">Kidney</option>
             <option value="Liver">Liver</option>
             <option value="Lung">Lung</option>
+            <option value="Tissues">Tissues</option>
+            <option value="Cornea(eye)">Cornea(eye)</option>
             <option value="Pancreas">Pancreas</option>
+            <option value="Small Bowel">Small Bowel</option>
           </select>
               </div>
             </div>
